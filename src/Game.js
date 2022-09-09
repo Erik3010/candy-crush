@@ -337,7 +337,6 @@ class Game {
     });
   }
   removeCandiesDestroyable(coordinates) {
-    console.log(coordinates);
     for (const [y, x] of coordinates) {
       this.candies[y][x].destroyable = false;
     }
