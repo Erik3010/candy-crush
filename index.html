@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <header id="header">
+      <img src="assets/images/candy.png" alt="image" id="logo">
+      <h1 class="title">Candy Crush</h1>
+      <p class="subtitle">
+        Simple Candy Crush Game build with HTML5 Canvas
+      </p>
+    </header>
+    <button id="btn-start">
+      Start Game!
+    </button>
+    <canvas id="canvas" width="720" height="720"></canvas>
+    <!-- <canvas id="canvas" class="hide" width="720" height="720"></canvas> -->
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
