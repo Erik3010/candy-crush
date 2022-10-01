@@ -10,4 +10,4 @@ The goal of the game is to match 3 or more candies of the same color in a row or
 - [ ] Add a high score
 - [ ] Add a sound
 - [ ] Fix/Optimize checking algorithms for matches candies. 
-- [ ] Fix flickering animation when swapping candies
+- [x] Fix flickering animation when swapping candies
