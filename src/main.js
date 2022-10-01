@@ -22,7 +22,7 @@ const startHandler = async () => {
   canvas.style.visibility = "visible";
   await animate(canvas, ["show"]);
 
-  game.init();
+  await game.init();
 };
 
 buttonStart.addEventListener("click", startHandler);

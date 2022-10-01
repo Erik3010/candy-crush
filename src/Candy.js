@@ -15,6 +15,7 @@ class Candy {
     targetY = null,
     width,
     type,
+    image,
   }) {
     this.ctx = ctx;
 
@@ -36,8 +37,9 @@ class Candy {
     this.selected = false;
     this.destroyable = false;
 
-    this.image = new Image();
-    this.image.src = SPRITE_IMAGE_PATH;
+    this.image = image;
+    // this.image = new Image();
+    // this.image.src = SPRITE_IMAGE_PATH;
 
     this.scale = 1;
   }

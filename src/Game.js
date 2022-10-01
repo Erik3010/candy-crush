@@ -1,5 +1,6 @@
 import Candy from "./Candy";
 import Utility from "./Utility";
+import { SPRITE_IMAGE_PATH } from "./constant";
 
 import { DIRECTIONS } from "./constant";
 
@@ -28,8 +29,12 @@ class Game {
 
     this.animationJobs = [];
     this.newCandies = [];
+
+    this.candyImage = null;
   }
-  init() {
+  async init() {
+    this.candyImage = await Utility.loadImage(SPRITE_IMAGE_PATH);
+
     this.candies.forEach((candies, row) =>
       candies.forEach((_, col) => {
         this.candies[row][col] = this.createCandyInstance({
@@ -333,6 +338,7 @@ class Game {
     return new Candy({
       ctx: this.ctx,
       width: this.cellWidth,
+      image: this.candyImage,
       ...options,
     });
   }
